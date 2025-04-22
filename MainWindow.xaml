@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="VBfoci.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VB Foci" Height="600" Width="900" Background="White">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Fejléc -->
+        <TextBlock Text="VB-foci" FontSize="28" FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Center" Margin="0 0 0 20"/>
+
+        <!-- Középső rész: Bal panel, ListBox, Kép -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Bal oldali panel -->
+            <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                <Label Content="Válassz évet:" FontWeight="Bold"/>
+                <ComboBox x:Name="ComboBoxEv" Width="120" Margin="0 5" SelectionChanged="ComboBoxEv_SelectionChanged"/>
+
+                <CheckBox x:Name="CheckBoxDontosok" Content="Csak döntősök" Margin="0 5" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <RadioButton x:Name="RadioEv" GroupName="Rendez" Content="Rendezés: Év" Margin="0 5" Checked="RadioButton_Ev_Checked"/>
+                <RadioButton x:Name="RadioHelyezes" GroupName="Rendez" Content="Rendezés: Helyezés" Margin="0 5" Checked="RadioButton_Helyezes_Checked"/>
+            </StackPanel>
+
+            <!-- ListBox középen -->
+            <ListBox x:Name="ListBoxResztvevok" Grid.Column="1" Margin="10 0"/>
+
+            <!-- Kép jobb oldalon -->
+            <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Border BorderThickness="1" BorderBrush="Black"><Image Source="/logo.jpg" Width="250"/></Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Alsó panel: szűrés + statisztika -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+            <Label Content="Ország:" VerticalAlignment="Center"/>
+            <TextBox x:Name="TextBoxOrszag" Width="150" Margin="10 0"/>
+            <Button Content="Szűrés és mentés" Width="130" Margin="10 0" Click="SzuresGomb_Click"/>
+            <Button Content="Statisztika" Width="100" Margin="10 0" Click="Gomb_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

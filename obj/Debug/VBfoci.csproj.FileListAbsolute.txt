@@ -1,0 +1,14 @@
+C:\Users\Dani\Desktop\VBfoci\bin\Debug\VBfoci.exe.config
+C:\Users\Dani\Desktop\VBfoci\bin\Debug\VBfoci.exe
+C:\Users\Dani\Desktop\VBfoci\bin\Debug\VBfoci.pdb
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.csproj.AssemblyReference.cache
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\MainWindow.baml
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\MainWindow.g.cs
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\App.g.cs
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci_MarkupCompile.cache
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.g.resources
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.Properties.Resources.resources
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.csproj.GenerateResource.cache
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.csproj.CoreCompileInputs.cache
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.exe
+C:\Users\Dani\Desktop\VBfoci\obj\Debug\VBfoci.pdb
